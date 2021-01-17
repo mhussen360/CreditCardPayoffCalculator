@@ -1,17 +1,80 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="1" passed="1" failed="0" skipped="0">
+<testng-results ignored="6" total="9" passed="3" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2021-01-02T12:10:47 EST" name="Default suite" finished-at="2021-01-02T12:11:02 EST" duration-ms="15252">
+  <suite started-at="2021-01-16T16:28:33 EST" name="AllTests" finished-at="2021-01-16T16:29:11 EST" duration-ms="38443">
     <groups>
+      <group name="positiveTest">
+        <method signature="CalculatePayoffMonthsTest.positivecalcualteNumMonthsTest()[pri:1, instance:com.bankrate.CalculatePayoffMonthsTest@d6e7bab]" name="positivecalcualteNumMonthsTest" class="com.bankrate.CalculatePayoffMonthsTest"/>
+      </group> <!-- positiveTest -->
+      <group name="zeroTest">
+        <method signature="CalculatePayoffMonthsTest.zeroBalanceTest(java.lang.String)[pri:3, instance:com.bankrate.CalculatePayoffMonthsTest@29e495ff]" name="zeroBalanceTest" class="com.bankrate.CalculatePayoffMonthsTest"/>
+      </group> <!-- zeroTest -->
+      <group name="largeTest">
+        <method signature="CalculatePayoffMonthsTest.veryLargeBalanceTest(java.lang.String)[pri:2, instance:com.bankrate.CalculatePayoffMonthsTest@1eb5174b]" name="veryLargeBalanceTest" class="com.bankrate.CalculatePayoffMonthsTest"/>
+      </group> <!-- largeTest -->
     </groups>
-    <test started-at="2021-01-02T12:10:47 EST" name="Default test" finished-at="2021-01-02T12:11:02 EST" duration-ms="15252">
-      <class name="com.herokuapp.theinternet.PostiveTest">
-        <test-method signature="loginTest()[pri:0, instance:com.herokuapp.theinternet.PostiveTest@78ffe6dc]" started-at="2021-01-02T12:10:47 EST" name="loginTest" finished-at="2021-01-02T12:11:02 EST" duration-ms="15184" status="PASS">
+    <test started-at="2021-01-16T16:28:33 EST" name="PositiveTests" finished-at="2021-01-16T16:28:45 EST" duration-ms="12818">
+      <class name="com.bankrate.CalculatePayoffMonthsTest">
+        <test-method is-config="true" signature="setUp()[pri:0, instance:com.bankrate.CalculatePayoffMonthsTest@d6e7bab]" started-at="2021-01-16T16:28:33 EST" name="setUp" finished-at="2021-01-16T16:28:44 EST" duration-ms="10934" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- loginTest -->
-      </class> <!-- com.herokuapp.theinternet.PostiveTest -->
-    </test> <!-- Default test -->
-  </suite> <!-- Default suite -->
+        </test-method> <!-- setUp -->
+        <test-method signature="positivecalcualteNumMonthsTest()[pri:1, instance:com.bankrate.CalculatePayoffMonthsTest@d6e7bab]" started-at="2021-01-16T16:28:44 EST" name="positivecalcualteNumMonthsTest" finished-at="2021-01-16T16:28:45 EST" duration-ms="1158" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- positivecalcualteNumMonthsTest -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.bankrate.CalculatePayoffMonthsTest@d6e7bab]" started-at="2021-01-16T16:28:45 EST" name="tearDown" finished-at="2021-01-16T16:28:45 EST" duration-ms="662" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- com.bankrate.CalculatePayoffMonthsTest -->
+    </test> <!-- PositiveTests -->
+    <test started-at="2021-01-16T16:28:45 EST" name="VeryLargeBalanceTest" finished-at="2021-01-16T16:28:57 EST" duration-ms="11918">
+      <class name="com.bankrate.CalculatePayoffMonthsTest">
+        <test-method is-config="true" signature="setUp()[pri:0, instance:com.bankrate.CalculatePayoffMonthsTest@1eb5174b]" started-at="2021-01-16T16:28:45 EST" name="setUp" finished-at="2021-01-16T16:28:54 EST" duration-ms="8251" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="veryLargeBalanceTest(java.lang.String)[pri:2, instance:com.bankrate.CalculatePayoffMonthsTest@1eb5174b]" started-at="2021-01-16T16:28:54 EST" name="veryLargeBalanceTest" finished-at="2021-01-16T16:28:56 EST" duration-ms="2621" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[1000000]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- veryLargeBalanceTest -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.bankrate.CalculatePayoffMonthsTest@1eb5174b]" started-at="2021-01-16T16:28:56 EST" name="tearDown" finished-at="2021-01-16T16:28:57 EST" duration-ms="1034" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- com.bankrate.CalculatePayoffMonthsTest -->
+    </test> <!-- VeryLargeBalanceTest -->
+    <test started-at="2021-01-16T16:28:57 EST" name="ZeroBalanceTest" finished-at="2021-01-16T16:29:11 EST" duration-ms="13604">
+      <class name="com.bankrate.CalculatePayoffMonthsTest">
+        <test-method is-config="true" signature="setUp()[pri:0, instance:com.bankrate.CalculatePayoffMonthsTest@29e495ff]" started-at="2021-01-16T16:28:57 EST" name="setUp" finished-at="2021-01-16T16:29:08 EST" duration-ms="10379" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="zeroBalanceTest(java.lang.String)[pri:3, instance:com.bankrate.CalculatePayoffMonthsTest@29e495ff]" started-at="2021-01-16T16:29:08 EST" name="zeroBalanceTest" finished-at="2021-01-16T16:29:10 EST" duration-ms="2039" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[0]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- zeroBalanceTest -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.bankrate.CalculatePayoffMonthsTest@29e495ff]" started-at="2021-01-16T16:29:10 EST" name="tearDown" finished-at="2021-01-16T16:29:11 EST" duration-ms="1177" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- com.bankrate.CalculatePayoffMonthsTest -->
+    </test> <!-- ZeroBalanceTest -->
+  </suite> <!-- AllTests -->
 </testng-results>

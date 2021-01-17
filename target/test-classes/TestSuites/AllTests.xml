@@ -1,0 +1,47 @@
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd" >
+
+<suite name="AllTests" verbose="1">
+
+
+	<test name="PositiveTests">
+
+
+		<groups>
+			<run>
+				<include name="positiveTest" />
+			</run>
+		</groups>
+		<classes>
+			<class name="com.bankrate.CalculatePayoffMonthsTest" />
+		</classes>
+	</test>
+
+
+	<test name="VeryLargeBalanceTest">
+		<parameter name="balance" value="1000000" />
+		<groups>
+			<run>
+				<include name="largeTest" />
+			</run>
+		</groups>
+
+		<classes>
+			<class name="com.bankrate.CalculatePayoffMonthsTest">
+			</class>
+		</classes>
+	</test>
+
+	<test name="ZeroBalanceTest">
+		<parameter name="balance" value="0" />
+		<groups>
+			<run>
+				<include name="zeroTest" />
+			</run>
+		</groups>
+
+		<classes>
+			<class name="com.bankrate.CalculatePayoffMonthsTest">
+			</class>
+		</classes>
+	</test>
+</suite>
